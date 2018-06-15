@@ -118,19 +118,21 @@ This inserts additional JS files on the wagtail editor pages
 '''
 @hooks.register('insert_editor_js')
 def insert_editor_js():
-    js_files = [
-        # We require this file here to make sure it is loaded before the other.
-        '%swagtailadmin/js/draftail.js' % settings.STATIC_URL,
-        '%swagtail_draftail_katex.js' % settings.STATIC_URL,
+    assets_files = [
+        '{}draftail_katex/css/katex.min.css'.format(settings.STATIC_URL),
+        '{}wagtailadmin/js/draftail.js'.format(settings.STATIC_URL),
+        '{}draftail_katex/js/wagtail_draftail_katex.js'.format(settings.STATIC_URL),
+        '{}draftail_katex/js/katex.min.js'.format(settings.STATIC_URL),
     ]
 
     return format_html("""
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.css" 
-    integrity="sha384-TEMocfGvRuD1rIAacqrknm5BQZ7W7uWitoih+jMNFXQIbNl16bO8OZmylH/Vi/Ei" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.9.0/katex.min.js" 
-    integrity="sha384-jmxIlussZWB7qCuB+PgKG1uLjjxbVVIayPJwi6cG6Zb4YKq0JIw+OMnkkEC7kYCq" 
-    crossorigin="anonymous"></script>
-    <script src="{}"></script>
-    <script src="{}"></script>
-    """, js_files[0], js_files[1])
-
+    <link rel="stylesheet" href="{css}" >
+    <script src="{draftail}"></script>
+    <script src="{wagtaildraftail}"></script>
+    <script src="{katex}"></script>
+    """.format(css=assets_files[0],
+               draftail=assets_files[1],
+               wagtaildraftail=assets_files[2],
+               katex=assets_files[3],
+               )
+   )
