@@ -9,9 +9,9 @@ with open ("readme.md", "r") as fp:
 
 from setuptools import setup, find_packages
 
-setup(name='wagtail-katek-plugin',
+setup(name='wagtail-draftail-katex',
       version='1.0.0',
-      description='This will be an integration of a KaTek into the Wagtail CMS Draftail editor.',
+      description='This will be an integration of a KaTex into the Wagtail CMS Draftail editor.',
       long_description=long_description,
       long_description_content_type = "text/markdown",
       url='https://github.com/gatensj/wagtail-draftail-katex',
@@ -23,8 +23,19 @@ setup(name='wagtail-katek-plugin',
           'wagtail>=2.0',
       ],
       classifiers=(
-            "Programming Language :: Python :: 3",
-            "License :: OSI Approved :: MIT License",
+            'Environment :: Web Environment',
+            'Intended Audience :: Developers',
+            'License :: OSI Approved :: BSD License',
             "Operating System :: OS Independent",
+            'Programming Language :: Python :: 3',
+            'Programming Language :: Python :: 3.5',
+            'Programming Language :: Python :: 3.6',
+            'Programming Language :: Python :: 3 :: Only',
+            'Framework :: Django',
+            'Framework :: Django :: 2.0',
+            'Framework :: Wagtail',
+            'Framework :: Wagtail :: 2',
+            'Topic :: Internet :: WWW/HTTP',
+            'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
       ),
 )
