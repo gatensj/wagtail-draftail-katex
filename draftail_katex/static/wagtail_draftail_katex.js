@@ -19,7 +19,7 @@
 	class KaTeXSource extends React.Component {
 
 		// This fires a windows prompt for new katex.  The else hanles if the user clicks cancel.
-		fireWindowsPrompt(entity, katextEquation = 'c = pmsqrt{a^2 + b^2}', ){
+		fireWindowsPrompt(entity, katextEquation = 'c = \\sqrt{a^2 + b^2}', ){
 
 			const editorState = this.props['editorState'];
 			const entityType = this.props['entityType'];
