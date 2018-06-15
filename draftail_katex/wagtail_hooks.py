@@ -127,9 +127,9 @@ def insert_editor_js():
 
     return format_html("""
     <link rel="stylesheet" href="{css}" >
+    <script src="{katex}"></script>
     <script src="{draftail}"></script>
     <script src="{wagtaildraftail}"></script>
-    <script src="{katex}"></script>
     """.format(css=assets_files[0],
                draftail=assets_files[1],
                wagtaildraftail=assets_files[2],
