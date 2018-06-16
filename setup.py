@@ -10,7 +10,7 @@ with open ("readme.md", "r") as fp:
 from setuptools import setup, find_packages
 
 setup(name='wagtail-draftail-katex',
-      version='0.1.0',
+      version='0.1.1',
       description='This will be an integration of a KaTex into the Wagtail CMS Draftail editor.',
       long_description=long_description,
       long_description_content_type = "text/markdown",

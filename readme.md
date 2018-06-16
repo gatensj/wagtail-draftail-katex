@@ -2,9 +2,9 @@
 
 This will be an integration of a KaTek into the Wagtail CMS Draftail editor.
 
-![Screenshot](images/screenshot06152018-1.png)
+![Inserting an Images](https://raw.githubusercontent.com/gatensj/wagtail-draftail-katex/master/images/screenshot06152018-1.png)
 
-![Screenshot](images/screenshot06152018-2.png)
+![Image Editor](https://raw.githubusercontent.com/gatensj/wagtail-draftail-katex/master/images/screenshot06152018-2.png)
 
 ## Installation
 
