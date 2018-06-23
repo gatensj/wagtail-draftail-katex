@@ -10,7 +10,7 @@ with open("readme.md", "r") as fp:
     long_description = fp.read()
 
 setup(name='wagtail-draftail-katex',
-      version='0.1.2',
+      version='0.1.3',
       description='Integrate KaTex render into the Wagtail CMS Draftail editor.',
       long_description=long_description,
       long_description_content_type="text/markdown",

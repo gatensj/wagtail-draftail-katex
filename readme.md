@@ -1,9 +1,11 @@
 # Wagtail Katex plugin
 
-This will be an integration of a KaTek into the Wagtail CMS Draftail editor.
+Integrate KaTex render into the Wagtail CMS Draftail editor..
 
-![Inserting an Images](https://raw.githubusercontent.com/gatensj/wagtail-draftail-katex/master/images/screenshot06152018-1.png)
+This image shows a rendered value:
+![Inserting an Image](https://raw.githubusercontent.com/gatensj/wagtail-draftail-katex/master/images/screenshot06152018-1.png)
 
+Simple dialog for editing the LaTeX codes:
 ![Image Editor](https://raw.githubusercontent.com/gatensj/wagtail-draftail-katex/master/images/screenshot06152018-2.png)
 
 ## Installation
