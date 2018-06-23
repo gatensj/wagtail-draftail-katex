@@ -6,10 +6,9 @@ from wagtail.admin.rich_text.editors.draftail import features as draftail_featur
 from wagtail.core import hooks
 
 
-
-'''
+"""
 This registers the katex feature to wagtails.  The converter rule ties in katex.py.  
-'''
+"""
 @hooks.register('register_rich_text_features')
 def register_rich_text_features(features):
     features.default_features.append('katex')
@@ -53,10 +52,10 @@ def register_rich_text_features(features):
 
 
 if WAGTAIL_VERSION < (2, 2):
-    '''
+    """
     Needed only for wagtail < 2.2
     This inserts additional JS files on the wagtail editor pages
-    '''
+    """
     @hooks.register('insert_editor_js')
     def insert_editor_js():
         assets_files = [

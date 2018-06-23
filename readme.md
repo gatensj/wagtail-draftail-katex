@@ -16,6 +16,29 @@ to your list of installed apps AFTER all wagtail app includes
 ## Usage
 
 
+## Development
+
+Create a local virtualenv using python3
+
+    python3 -m venv .venv3
+    source .venv3/bin/activate
+
+
+
+On windows, the ```source``` command above is different. you need to run the setup script
+
+    .venv3\Scripts\activate
+
+Install the development requirements
+
+    pip install -r requirements_dev.txt
+
 ## Resources
 
-Some links to Katex
+This plugin uses the KaTeX javascript renderer to render the input text to an output format. More information can be found here:
+
+    https://khan.github.io/KaTeX/
+
+Including a reference to the LaTeX Math syntax supported.
+
+
