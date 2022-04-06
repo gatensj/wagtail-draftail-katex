@@ -8,10 +8,10 @@ This will be an integration of a KaTek into the Wagtail CMS Draftail editor.
 
 ## Installation
 
-- ```pip install wagtail-katek-plugin```
+- ```pip install wagtail-draftail-katex```
 - Add ```draftail_katex``` 
 to your list of installed apps AFTER all wagtail app includes 
-(e.g. wagtail.admin, wagtail.core etc).
+(e.g. wagtail.admin, wagtail.core etc) or simply add ```INSTALLED_APPS += ['draftail_katex']``` to the bottom of settings.py
 
 ## Usage
 
