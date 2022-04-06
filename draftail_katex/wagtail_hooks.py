@@ -10,7 +10,7 @@ from wagtail.core import hooks
 This registers the katex feature to wagtails.  The converter rule ties in katex.py.  
 """
 @hooks.register('register_rich_text_features')
-def register_rich_text_features(features):
+def register_katex_features(features):
     features.default_features.append('katex')
     """
     Registering the `katex` feature, which uses the `KATEX` Draft.js entity type,
