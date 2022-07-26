@@ -1,3 +1,11 @@
+# THIS PACKAGE IS NO LONGER MAINTAINED
+
+# PLEASE SEE https://github.com/ongchi/wagtail-katex FOR A MAINTAINED REPO
+
+# THANK YOU @ongchi FOR TAKING THIS OVER
+
+
+
 # Wagtail Katex plugin
 
 This will be an integration of a KaTek into the Wagtail CMS Draftail editor.
